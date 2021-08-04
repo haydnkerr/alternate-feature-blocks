@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    width: 100vw;
+    height: auto;
+}
+
+/* universal style */
+
+h1, h2 {
+    font-family: "Poppins";
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(193, 100%, 96%);
+    padding: 20px;
+    align-items: center;
+    padding-bottom: 40px;
+    
+}
+
+header img {
+    width: 130px;
+    height: auto;
+   
+}
+
+header button {
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    height: 30px;
+    font-weight: 600;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.06);
+
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.free-btn {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;   
+}
+
+.free-btn:hover {
+    cursor: pointer;
+    background-color: hsl(322, 98%, 42%);
+    transition: ease-in-out 0.3s;
+}
+
+.top-card {
+    padding: 20px;
+    padding-bottom: 40px;
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    margin-bottom: 50px;
+}
+
+.top-card-info {
+    text-align: center;
+    
+}
+
+.top-card p {
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.top-card img {
+    width: 100%;
+    height: auto;
+}
+
+.info-card {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+.info-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.info-card p {
+    color: hsl(208, 11%, 55%);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.bottom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    padding: 30px 0px;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+.bottom-card button {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 100px 20px 20px 20px;
+    
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    color: white;
+    margin-bottom: 15px;
+    fill: white;
+}
+
+.icon {
+    margin-right: 10px;
+    height: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    display: flex;
+}
+
+.address p {
+    margin-left: 15px;
+}
+
+.location img {
+    margin-right: 20px;
+}
+
+.social-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 50px;
+    /*margin: 10px;*/
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.social-icons img:hover {
+    cursor: pointer;
+    padding: 0px;
+    transition: ease-in-out .3s;
+}
+
+@media (min-width: 800px) {
+    header {
+        padding: 50px;
+    }
+    
+    .top-card {
+        display: flex;
+        padding: 70px;
+        align-items: center;
+        background-image: url("./images/bg-hero-desktop.svg");
+    }
+
+    .top-card-info {
+        text-align: left;
+        width: 75%;
+        padding-right: 130px;
+    }
+    
+    .info-card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .info-card img {
+        margin-bottom: 0px;
+
+    }
+
+    .conversations {
+        padding: 20px 100px 20px 20px;
+        justify-content: space-between;
+    }
+
+    .conversations-info {
+        padding-left: 50px;
+    }
+
+
+
+    .grow, .users {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 20px 20px 100px;
+        justify-content: space-between;
+    }
+
+    .grow p, .users p {
+        padding-right: 50px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0px 0px 20px 60px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 100px 0px 60px;
+        margin-bottom: 50px;
+    }
+
+    .location {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .address {
+        display: flex;
+    }
+
+    h6 {
+        text-align: right;
+        margin: 0px 25px 50px 0px;
+    }
+}
